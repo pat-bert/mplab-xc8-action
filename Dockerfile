@@ -8,7 +8,7 @@ ARG DFP_PACKS=""
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install necessary dependencies
-RUN apt-get update -qq && apt-get install -y -qq `
+RUN apt-get update -qq && apt-get install -y -qq \
     wget \
     tar \
     sudo \
