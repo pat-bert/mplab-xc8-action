@@ -32,10 +32,10 @@ RUN wget -q --referer="https://www.microchip.com/en-us/tools-resources/develop/m
     rm mplabx
 
 # Download and install XC8 compiler
-RUN wget -nv -O /tmp/xc32 "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/xc32-v${XC8_VERSION}-full-install-linux-x64-installer.run" && \
-    chmod +x /tmp/xc32 && \
-    sudo /tmp/xc32 --mode unattended --unattendedmodeui none --netservername localhost --LicenseType FreeMode --prefix "/opt/microchip/xc32/v${XC8_VERSION}" && \
-    rm /tmp/xc32
+RUN wget -nv -O /tmp/xc8 "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/xc8-v${XC8_VERSION}-full-install-linux-x64-installer.run" && \
+    chmod +x /tmp/xc8 && \
+    sudo /tmp/xc8 --mode unattended --unattendedmodeui none --netservername localhost --LicenseType FreeMode --prefix "/opt/microchip/xc8/v${XC8_VERSION}" && \
+    rm /tmp/xc8
 
 
 # Install DFPs
