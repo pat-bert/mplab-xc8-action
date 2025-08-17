@@ -16,9 +16,5 @@ runs:
   image: Dockerfile
   args:
     - ${{ inputs.project }}
-    - ${{ inputs.configuration }}
-    - --build-args
-    - ${{ inputs.mplabx-version }}
-    - ${{ inputs.xc8-version }}   
-    - ${{ inputs.packs }}    
+    - ${{ inputs.configuration }} 
 
