@@ -14,11 +14,11 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  build-args:
-    - ${{ inputs.mplabx-version }}
-    - ${{ inputs.xc8-version }}   
-    - ${{ inputs.packs }}
   args:
     - ${{ inputs.project }}
     - ${{ inputs.configuration }}
+    - --build-args
+    - ${{ inputs.mplabx-version }}
+    - ${{ inputs.xc8-version }}   
+    - ${{ inputs.packs }}    
 
