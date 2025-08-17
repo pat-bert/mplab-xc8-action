@@ -17,3 +17,6 @@ runs:
   args:
     - ${{ inputs.project }}
     - ${{ inputs.configuration }}
+    - ${{ inputs.packs }}
+    - ${{ inputs.mplabx-version }}
+    - ${{ inputs.xc8-version }}   
