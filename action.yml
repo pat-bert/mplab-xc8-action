@@ -14,7 +14,7 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  buildArgs:
+  build-args:
     - ${{ inputs.mplabx-version }}
     - ${{ inputs.xc8-version }}   
     - ${{ inputs.packs }}
